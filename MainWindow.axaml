@@ -1,0 +1,113 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="SimpleFormGUI.MainWindow"
+        Title="Gestion des candidats"
+        Background="#0d1f0d"
+        Foreground="#c8f0c8"
+        Width="900" Height="600"
+        FontFamily="Segoe UI, sans-serif">
+
+    <Grid ColumnDefinitions="*,*,*" Margin="16">
+
+        <!-- Colonne 1 : Enregistrer un candidat -->
+        <Border Grid.Column="0" Background="#132613" CornerRadius="8" Padding="16" Margin="4"
+                BorderBrush="#2d6a2d" BorderThickness="1">
+            <StackPanel Spacing="12">
+                <TextBlock Text="Enregistrer un candidat"
+                           FontSize="16" FontWeight="Bold"
+                           Foreground="#4caf50" Margin="0,0,0,8"/>
+
+                <TextBlock Text="Nom :" Foreground="#c8f0c8"/>
+                <TextBox x:Name="InputNom" Background="#1a3a1a" Foreground="#c8f0c8"
+                         BorderBrush="#2d6a2d" CornerRadius="4"/>
+
+                <TextBlock Text="Année :" Foreground="#c8f0c8"/>
+                <TextBox x:Name="InputAnnee" Background="#1a3a1a" Foreground="#c8f0c8"
+                         BorderBrush="#2d6a2d" CornerRadius="4"/>
+
+                <TextBlock Text="Sexe :" Foreground="#c8f0c8"/>
+                <RadioButton x:Name="RadioMasculin" Content="Masculin"
+                             Foreground="#c8f0c8" GroupName="Sexe"/>
+                <RadioButton x:Name="RadioFeminin" Content="Féminin"
+                             Foreground="#c8f0c8" GroupName="Sexe"/>
+
+                <Button x:Name="BtnEnregistrerCandidat"
+                        Click="BtnEnregistrerCandidat_Click"
+                        Content="Enregistrer un candidat"
+                        Background="#2d6a2d" Foreground="#c8f0c8"
+                        FontWeight="Bold" CornerRadius="4"
+                        HorizontalAlignment="Stretch" Margin="0,8,0,0"/>
+
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <TextBlock Text="Numéro du candidat :" Foreground="#7ab87a"/>
+                    <TextBlock x:Name="LabelNumeroCandidat" Text="NA"
+                               Foreground="#4caf50" FontWeight="Bold"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <!-- Colonne 2 : Enregistrer un résultat -->
+        <Border Grid.Column="1" Background="#132613" CornerRadius="8" Padding="16" Margin="4"
+                BorderBrush="#2d6a2d" BorderThickness="1">
+            <StackPanel Spacing="12">
+                <TextBlock Text="Enregistrer le résultat d'un candidat"
+                           FontSize="16" FontWeight="Bold"
+                           Foreground="#4caf50" Margin="0,0,0,8"
+                           TextWrapping="Wrap"/>
+
+                <TextBlock Text="Numéro candidat :" Foreground="#c8f0c8"/>
+                <TextBox x:Name="InputNumeroCandidat" Background="#1a3a1a" Foreground="#c8f0c8"
+                         BorderBrush="#2d6a2d" CornerRadius="4"/>
+
+                <TextBlock Text="Nombre de fautes :" Foreground="#c8f0c8"/>
+                <TextBox x:Name="InputNbFautes" Background="#1a3a1a" Foreground="#c8f0c8"
+                         BorderBrush="#2d6a2d" CornerRadius="4"/>
+
+                <Button x:Name="BtnEnregistrerResultat"
+                        Click="BtnEnregistrerResultat_Click"
+                        Content="Enregistrer un résultat"
+                        Background="#2d6a2d" Foreground="#c8f0c8"
+                        FontWeight="Bold" CornerRadius="4"
+                        HorizontalAlignment="Stretch" Margin="0,8,0,0"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Colonne 3 : Liste des reçus -->
+        <Border Grid.Column="2" Background="#132613" CornerRadius="8" Padding="16" Margin="4"
+                BorderBrush="#2d6a2d" BorderThickness="1">
+            <StackPanel Spacing="12">
+                <TextBlock Text="Liste des candidats reçus"
+                           FontSize="16" FontWeight="Bold"
+                           Foreground="#4caf50" Margin="0,0,0,8"/>
+
+                <ListBox x:Name="ListeRecus"
+                         Background="#1a3a1a" Foreground="#c8f0c8"
+                         BorderBrush="#2d6a2d" Height="200"/>
+
+                <Button x:Name="BtnAfficherRecus"
+                        Click="BtnAfficherRecus_Click"
+                        Content="Afficher reçus"
+                        Background="#2d6a2d" Foreground="#c8f0c8"
+                        FontWeight="Bold" CornerRadius="4"
+                        HorizontalAlignment="Stretch"/>
+
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <TextBlock Text="% reçus :" Foreground="#7ab87a"/>
+                    <TextBlock x:Name="LabelPctRecus" Text="0"
+                               Foreground="#4caf50" FontWeight="Bold"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <TextBlock Text="% reçus H :" Foreground="#7ab87a"/>
+                    <TextBlock x:Name="LabelPctRecusH" Text="0"
+                               Foreground="#4caf50" FontWeight="Bold"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <TextBlock Text="% reçus F :" Foreground="#7ab87a"/>
+                    <TextBlock x:Name="LabelPctRecusF" Text="0"
+                               Foreground="#4caf50" FontWeight="Bold"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Window>
