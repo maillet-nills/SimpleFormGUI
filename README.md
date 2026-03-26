@@ -1,6 +1,9 @@
 # 🖼️ SimpleFormGUI
 
-A small form desktop applicaiton built with **C#** and **Avalonia UI** to learn.
+A small form desktop application built with **C#** and **Avalonia UI** to learn.
+
+![preview.png](preview.png)
+
 
 ## ✨ Features
 - Designed with Avalonia to run on Windows, macOS, and Linux.
