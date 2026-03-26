@@ -5,7 +5,7 @@
     <Nullable>enable</Nullable>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
-    <RootNamespace>MonApp</RootNamespace>
+    <RootNamespace>SimpleFormGUI</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

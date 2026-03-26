@@ -1417,19 +1417,19 @@
     ]
   },
   "packageFolders": {
-    "/home/Nwt/.nuget/packages/": {}
+    "C:\\Users\\nills\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/Nwt/SimpleFormGUI/SimpleFormGUI.csproj",
+      "projectUniqueName": "D:\\Projets de Code\\C#\\SimpleFormGUI\\SimpleFormGUI.csproj",
       "projectName": "SimpleFormGUI",
-      "projectPath": "/home/Nwt/SimpleFormGUI/SimpleFormGUI.csproj",
-      "packagesPath": "/home/Nwt/.nuget/packages/",
-      "outputPath": "/home/Nwt/SimpleFormGUI/obj/",
+      "projectPath": "D:\\Projets de Code\\C#\\SimpleFormGUI\\SimpleFormGUI.csproj",
+      "packagesPath": "C:\\Users\\nills\\.nuget\\packages\\",
+      "outputPath": "D:\\Projets de Code\\C#\\SimpleFormGUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/Nwt/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\nills\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1447,7 +1447,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -1485,12 +1491,30 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.23, 8.0.23]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[8.0.23, 8.0.23]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.23, 8.0.23]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.23, 8.0.23]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.124/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

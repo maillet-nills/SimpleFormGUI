@@ -4,7 +4,7 @@ using Avalonia.Markup.Xaml;
 
 namespace SimpleFormGUI;
 
-public partial class SimpleFormGUI : Application
+public partial class App : Application
 {
     public override void Initialize()
     {
