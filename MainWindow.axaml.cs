@@ -23,7 +23,7 @@ public partial class MainWindow : Window
     // Bouton "Enregistrer un candidat"
     private void BtnEnregistrerCandidat_Click(object sender, RoutedEventArgs e)
     {
-        tabNoms[nbCandidats] = InputNom.Text;
+        tabNoms[nbCandidats] = InputNom.Text ?? "";
         tabNaissances[nbCandidats] = Convert.ToInt16(InputAnnee.Text);
         if (RadioMasculin.IsChecked == true)
         {
@@ -72,13 +72,15 @@ public partial class MainWindow : Window
 
         if (nbCandidats != 0)
         {
-            LabelPctRecus.Text = Convert.ToString((nbRecus / nbCandidats) * 100);
-        }else if (nbCandidatsM != 0)
+            LabelPctRecus.Text = $"{(float)nbRecus / nbCandidats * 100:F2}";
+        }
+        if (nbCandidatsM != 0)
         {
-            LabelPctRecusH.Text = Convert.ToString((nbRecusM / nbCandidatsM) * 100);
-        }else if (nbCandidatsF != 0)
+            LabelPctRecusH.Text = $"{((float)nbRecusM / nbCandidats) * 100:F2}";
+        }
+        if (nbCandidatsF != 0)
         {
-            LabelPctRecusF.Text = Convert.ToString((nbRecusF / nbCandidatsF) * 100);
+            LabelPctRecusF.Text = $"{((float)nbRecusF / nbCandidats) * 100:F2}";
         }
     }
 }
